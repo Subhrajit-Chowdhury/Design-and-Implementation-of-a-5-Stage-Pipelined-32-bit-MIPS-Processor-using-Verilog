@@ -4,7 +4,11 @@ An educational Verilog-based implementation of a 5-stage pipelined MIPS processo
 5 Pipeline Stages: Implements all five classical MIPS pipeline stages:
 
 Instruction Fetch (IF)
+
 Instruction Decode/Register Fetch (ID)
+
 Execute (EX)
+
 Memory Access (MEM)
+
 Write Back (WB)

@@ -31,7 +31,7 @@ We assume memory word size is 32 bits (word addressable)
 
  Instruction Encoding
 ISR
-
+<img width="966" height="542" alt="Image" src="https://github.com/user-attachments/assets/39cb543d-1b17-4e07-9ea7-001fe85754b4" />
 shamt : shift amount, funct : opcode extension for additional functions.
 
 Some instructions require two register operands rs & rt as input, while some require only rs.

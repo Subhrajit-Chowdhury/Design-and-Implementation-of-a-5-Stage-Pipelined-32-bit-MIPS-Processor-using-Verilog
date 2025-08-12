@@ -41,3 +41,6 @@ This requirement is only identified only after the instruction is decoded.
 While decoding is going on, we can prefetch the registers in parallel, which may or may not be used later.
 
 Similarly, the 16-bit and 26-bit immediate data are retrieved and signextended to 32-bits in case they are required later.
+<img width="1156" height="556" alt="Image" src="https://github.com/user-attachments/assets/04edc521-63af-463b-85c6-f33633fa0208" />
+
+<img width="1442" height="727" alt="Image" src="https://github.com/user-attachments/assets/7e9c8b56-5093-4ab4-9f6c-018049092ab4" />

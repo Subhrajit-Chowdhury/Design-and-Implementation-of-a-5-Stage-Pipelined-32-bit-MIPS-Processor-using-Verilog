@@ -51,14 +51,8 @@ Similarly, the 16-bit and 26-bit immediate data are retrieved and signextended t
 
 <img width="1442" height="727" alt="Image" src="https://github.com/user-attachments/assets/7e9c8b56-5093-4ab4-9f6c-018049092ab4" />
 
-Here's a concise and technically focused README for the repository "Design-and-Implementation-of-a-5-Stage-Pipelined-32-bit-MIPS-Processor-using-Verilog", following standard GitHub conventions and integrating key information from the course slides, but **without code description**:
 
 ***
-
-# Design and Implementation of a 5-Stage Pipelined 32-bit MIPS Processor using Verilog
-
-
-
 ## Features
 
 - **MIPS32 Instruction Set Subset:**  

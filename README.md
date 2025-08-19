@@ -1,7 +1,11 @@
 # Design-and-Implementation-of-a-5-Stage-Pipelined-32-bit-MIPS-Processor-using-Verilog
-An educational Verilog-based implementation of a 5-stage pipelined MIPS processor, simulating the instruction flow through standard MIPS stages: IF, ID, EX, MEM, and WB. This project is designed to help understand pipelined architecture and hazards in RISC-based processors.
 
-5 Pipeline Stages: Implements all five classical MIPS pipeline stages:
+## Overview
+
+An educational Verilog-based implementation of a 5-stage pipelined MIPS processor. This project is designed to help understand pipelined architecture and hazards in RISC-based processors.
+This repository documents the development of a five-stage pipelined 32-bit MIPS processor using Verilog. The implementation is based on a subset of the MIPS32 instruction set architecture and follows the classical RISC pipeline stages: Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Write Back (WB). 
+
+5 Pipeline Stages:
 
 Instruction Fetch (IF)
 
@@ -53,9 +57,7 @@ Here's a concise and technically focused README for the repository "Design-and-I
 
 # Design and Implementation of a 5-Stage Pipelined 32-bit MIPS Processor using Verilog
 
-## Overview
 
-This repository documents the development of a five-stage pipelined 32-bit MIPS processor using Verilog. The implementation is based on a subset of the MIPS32 instruction set architecture and follows the classical RISC pipeline stages: Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Write Back (WB). 
 
 ## Features
 

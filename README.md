@@ -46,3 +46,66 @@ Similarly, the 16-bit and 26-bit immediate data are retrieved and signextended t
 <img width="1156" height="556" alt="Image" src="https://github.com/user-attachments/assets/04edc521-63af-463b-85c6-f33633fa0208" />
 
 <img width="1442" height="727" alt="Image" src="https://github.com/user-attachments/assets/7e9c8b56-5093-4ab4-9f6c-018049092ab4" />
+
+Here's a concise and technically focused README for the repository "Design-and-Implementation-of-a-5-Stage-Pipelined-32-bit-MIPS-Processor-using-Verilog", following standard GitHub conventions and integrating key information from the course slides, but **without code description**:
+
+***
+
+# Design and Implementation of a 5-Stage Pipelined 32-bit MIPS Processor using Verilog
+
+## Overview
+
+This repository documents the development of a five-stage pipelined 32-bit MIPS processor using Verilog. The implementation is based on a subset of the MIPS32 instruction set architecture and follows the classical RISC pipeline stages: Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Write Back (WB). 
+
+## Features
+
+- **MIPS32 Instruction Set Subset:**  
+  - Load/Store: `LW`, `SW`
+  - Arithmetic/Logic: `ADD`, `SUB`, `AND`, `OR`, `MUL`, `SLT`
+  - Immediate Arithmetic: `ADDI`, `SUBI`, `SLTI`
+  - Branch: `BEQZ`, `BNEQZ`
+  - Jump: `J`
+  - Halt: `HLT`
+- **Three Instruction Formats:**  
+  - R-type (Register)
+  - I-type (Immediate)
+  - J-type (Jump)
+- **32 General-Purpose Registers** plus a program counter (PC)
+- **32-bit Data Path:** Word-addressable memory
+- **Pipelined Implementation:**  
+  - Five distinct pipeline stages: IF, ID, EX, MEM, WB  
+  - Inter-stage latches: `IF_ID`, `ID_EX`, `EX_MEM`, `MEM_WB`
+  - Behavioral modeling in Verilog with explicit handling for HALT and branch control
+  
+## Pipeline Stages
+
+1. **Instruction Fetch (IF):** Fetches instruction from memory and computes the next PC.
+2. **Instruction Decode/Register Fetch (ID):** Decodes instruction, reads registers, and sign-extends immediates.
+3. **Execution/Address Calculation (EX):** ALU operations and effective address computation.
+4. **Memory Access/Branch Completion (MEM):** Loads, stores, and branch decision/update.
+5. **Write Back (WB):** Result written to the register file.
+
+## Testbenches
+
+The repo includes testbenches for:
+- **Arithmetic Operations:** Adding multiple values in registers
+- **Memory Operations:** Loading value from memory, computation, and storing results
+- **Control Flow:** Loop and branch execution (e.g., factorial computation)
+
+## Usage & Simulation
+
+- Two-phase clocking scheme utilized (`clk1`, `clk2`)
+- Sample memory initialization and register setup via testbenches
+- Output verification through register/memory dumps after simulation
+- Example VCD files and GTKWave instructions included for waveform viewing
+
+## Notes
+
+- **Hazard Handling:** Data/control hazard avoidance is not implemented; dummy instructions are inserted manually where required in examples.
+- **Behavioral Model:** Primary focus is educational; synthesis/structural optimizations are not included.
+
+## References
+
+- Based on NPTEL course "Hardware Modeling Using Verilog" (IIT Kharagpur, Prof. Indranil Sengupta)
+
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/52466036/819ac10e-1085-4fe0-8da9-bc185e69281c/week8-slides_watermark.pdf

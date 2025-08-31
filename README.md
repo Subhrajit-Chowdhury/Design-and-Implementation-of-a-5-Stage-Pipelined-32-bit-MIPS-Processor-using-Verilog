@@ -103,5 +103,3 @@ The repo includes testbenches for:
 ## References
 
 - Based on NPTEL course "Hardware Modeling Using Verilog" (IIT Kharagpur, Prof. Indranil Sengupta)
-
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/52466036/819ac10e-1085-4fe0-8da9-bc185e69281c/week8-slides_watermark.pdf
